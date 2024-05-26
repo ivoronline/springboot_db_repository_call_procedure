@@ -20,7 +20,8 @@ public class MyController {
   @ResponseBody
   @GetMapping("/callProcedure")
   public String callProcedure(@RequestParam String name, @RequestParam Integer age) {
-    return utilEntityRepository.myProcedure(name, age);
+    return utilEntityRepository.callProcedure(name, age);
   }
 
 }
+

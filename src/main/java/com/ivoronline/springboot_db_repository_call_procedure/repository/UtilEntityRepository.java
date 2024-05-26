@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface UtilEntityRepository extends CrudRepository<UtilEntity, Integer> {
    @Procedure(procedureName = "TEST.MY_PROCEDURE", outputParameterName = "message")
-   String myProcedure(String name, Integer age);
+   String callProcedure(String name, Integer age);
 }
